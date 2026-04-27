@@ -1,0 +1,4 @@
+Flask
+psycopg[binary]
+python-dotenv
+gunicorn
