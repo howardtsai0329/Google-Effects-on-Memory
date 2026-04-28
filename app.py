@@ -212,7 +212,6 @@ def finish():
 
     content = """
     <h2>Complete</h2>
-    <p>All 40 statement folder values have been saved to Neon.</p>
     <p><a href="/">Run another participant</a></p>
     """
     return render_template_string(BASE_HTML, content=content)
