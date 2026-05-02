@@ -12,7 +12,7 @@ app = Flask(__name__)
 app.secret_key = os.getenv("FLASK_SECRET_KEY", "replace-with-a-secret-key")
 
 FOLDERS = ["FACTS", "DATA", "INFO", "NAMES", "ITEMS", "POINTS"]
-TOTAL_STATEMENTS = 40
+TOTAL_STATEMENTS = 30
 
 
 def _stage_redirect():
