@@ -82,7 +82,7 @@ BASE_HTML = """
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Google Effects on Memory</title>
+  <title>網路對記憶儲存策略的影響</title>
   <style>
     body { font-family: Arial, sans-serif; max-width: 900px; margin: 40px auto; line-height: 1.5; padding: 0 16px; }
     .card { border: 1px solid #ddd; border-radius: 10px; padding: 20px; margin-top: 16px; }
@@ -91,7 +91,7 @@ BASE_HTML = """
   </style>
 </head>
 <body>
-  <h1>Google Effects on Memory</h1>
+  <h1>網路對記憶儲存策略的影響</h1>
   <div class="card">
     {{ content|safe }}
   </div>
