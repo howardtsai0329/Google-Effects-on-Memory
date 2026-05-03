@@ -116,12 +116,12 @@ def home():
         return redirect(url_for("saved_notice"))
 
     content = """
-    <h2>Start Session</h2>
-    <p>Enter your name to begin.</p>
+    <h2>開始測試</h2>
+    <p>請輸入您的名字</p>
     <form method="post">
-      <label>Name</label>
-      <input type="text" name="name" placeholder="e.g., Alex" required>
-      <button type="submit">Start</button>
+      <label>名字</label>
+      <input type="text" name="name" placeholder="小明" required>
+      <button type="submit">開始測試</button>
     </form>
     """
     return render_template_string(BASE_HTML, content=content)
@@ -155,10 +155,10 @@ def saved_notice():
     content = f"""
     <h2>Saved</h2>
     <p style="text-align:center; font-size: 1.2rem;">
-      Your entry has been saved into the folder <strong>{folder_name}</strong>.
+      您的資料已經被儲存到 <strong>{folder_name}</strong> 資料夾中。
     </p>
     <form method="post" style="text-align:center;">
-      <button type="submit">Confirm</button>
+      <button type="submit">確認</button>
     </form>
     """
     return render_template_string(BASE_HTML, content=content)
@@ -193,11 +193,11 @@ def statement_step(statement_number):
 
     content = f"""
     <h2>Statement {statement_number} of {TOTAL_STATEMENTS}</h2>
-    <p>Type the statement shown on paper, then click submit.</p>
+    <p>請輸入紙上顯示的句子，然後點擊提交。</p>
     <form method="post">
-      <label>Statement text</label>
+      <label>請輸入句子</label>
       <textarea name="typed_statement" rows="4" required></textarea>
-      <button type="submit">Submit</button>
+      <button type="submit">提交</button>
     </form>
     """
     return render_template_string(BASE_HTML, content=content)
@@ -211,8 +211,8 @@ def finish():
         return _stage_redirect()
 
     content = """
-    <h2>Complete</h2>
-    <p><a href="/">Run another participant</a></p>
+    <h2>完成</h2>
+    <p><a href="/">再進行一次測試</a></p>
     """
     return render_template_string(BASE_HTML, content=content)
 
