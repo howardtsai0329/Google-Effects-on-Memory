@@ -17,7 +17,7 @@ FOLDERS = ["事實", "數據", "資訊", "名稱", "項目", "重點"]
 TOTAL_STATEMENTS = 30
 
 # Seconds before the “continue to next phase” button becomes active (e.g. 600 for 10 minutes).
-NEXT_PHASE_WAIT_SECONDS = 720
+NEXT_PHASE_WAIT_SECONDS = 10
 
 # Phase 2: question index 1..30 maps to answer_1..answer_30 regardless of display order.
 PHASE2_QUESTIONS = [
